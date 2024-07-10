@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --darkGrey: hsl(0, 0%, 12%);
+    --offBlack: hsl(0, 0%, 8%);
+    --green: hsl(75, 94%, 57%);
+    
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--offBlack);
+    margin: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    align-content: start;
+
+  
+}
+
+
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+    margin: 24px auto;
+
+   height: 100vh;
+   align-items: center;
+}
+
+
+.profile__card{
+    background-color: var(--darkGrey);
+    height: 580px;
+    width: 330px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: 24px auto;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.profile__card__name{
+    color: var(--white);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 6px;
+    
+}
+
+.profile__card__location{
+    color: var(--green);
+    font-weight: 600;
+    font-size: 0.9em;
+    
+    
+}
+
+.profile__card__description{
+    color: var(--white);
+    margin-top: 24px;
+    
+}
+
+.profile__card__button{
+ 
+    margin-top: 24px;
+
+   }
+
+.profile__card__button__ft,
+.profile__card__button__git,
+.profile__card__button__linkedIn,
+.profile__card__button__twitter,
+.profile__card__button__instagram{
+    background-color: var(--grey);
+    border-radius: 6px;
+    border-style: none;
+    font-weight: 600;
+    width: 80%;
+    margin: 6px;
+    color: var(--white);
+    height: 46px;
+}
+
+.profile__card__button__ft:hover,
+.profile__card__button__git:hover,
+.profile__card__button__linkedIn:hover,
+.profile__card__button__twitter:hover,
+.profile__card__button__instagram:hover{
+    background-color: var(--green);
+    cursor: pointer;
+    color: var(--darkGrey);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--white);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width:600px){
+  
+    .profile__card{
+        background-color: var(--darkGrey);
+        height: 610px;
+        width: 384px;
+           }
+
+    .profile__card__name{
+        margin-bottom: 20px;
+           }
+    
+    .profile__card__description{
+       
+            margin-top: 36px;
+            
+        }
+        .profile__card__button__ft,
+        .profile__card__button__git,
+        .profile__card__button__linkedIn,
+        .profile__card__button__twitter,
+        .profile__card__button__instagram{
+           
+            width: 80%;
+            margin: 8px;
+            color: var(--white);
+            height: 48px;
+        }
+    
+}
